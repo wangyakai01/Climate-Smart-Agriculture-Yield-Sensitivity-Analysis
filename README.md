@@ -1,8 +1,8 @@
 # Climate–Smart Agriculture Yield Sensitivity Analysis
 
 ### **Overview**
-This repository contains MATLAB R2023b source code, scripts, and example data for analyzing the effects of **climate-smart agricultural (CSA) practices**—including no-till, cover cropping, tile drainage, and irrigation—on U.S. crop yield sensitivity and drought resilience from 1980 to 2020.  
-The workflow integrates multi-decadal yield, management, climate, and soil datasets using **Random Forest (RF)** models and statistical analyses to derive the **Agricultural Drought Sensitivity Index (ADSI)** and related indicators.
+This repository contains MATLAB R2023b source code, scripts, and example data for analyzing the effects of climate-smart agricultural (CSA) practices—including no-till, cover cropping, tile drainage, and irrigation—on U.S. crop yield sensitivity and drought resilience from 1980 to 2020.  
+The workflow integrates multi-decadal yield, management, climate, and soil datasets using Random Forest (RF) models and statistical analyses to derive the Agricultural Drought Sensitivity Index (ADSI) and related indicators.
 
 ---
 
