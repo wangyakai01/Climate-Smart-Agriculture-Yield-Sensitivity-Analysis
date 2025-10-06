@@ -1,13 +1,6 @@
 %% ========================== Figure 2 ==========================
 
-%% ===============================================================
-%   Load required variables for Figure 2 analysis
-% ===============================================================
 
-load .\Data\speidata.mat
-load .\Data\UStable.mat
-% Load shapefile of the USA for geographic plotting
-USgeo = readgeotable(".\Shapefile\USA_84.shp");
 regionShort = {'NE','SE','MW','GPN','GPS','SW','NW'}; 
 %% ========================== Data Preparation ==========================
 % List of datasets: crop yield and nutrient data

@@ -7,7 +7,6 @@
 % 3. Computes drought sensitivity (ADSI) across regions and crops.
 % ===============================================================
 
-load .\Data\CSAdata.mat
 
 %% ===============================================================
 %   PART 1: Train Random Forest for Each Crop Type

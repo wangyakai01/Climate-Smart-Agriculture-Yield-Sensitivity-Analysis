@@ -3,8 +3,7 @@
 %   Under Combined Management: Tillage + Cover Cropping + Drainage
 % ==============================================================
 
-% Load dataset containing site-level yield, management, and climate info
-load .\Data\Siteyield
+
 
 %% ==============================================================
 %   PART 1: Analysis for Dry Years (SPEI < 0)

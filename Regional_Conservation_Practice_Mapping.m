@@ -14,13 +14,6 @@
 clear; clc;
 
 %% ===============================================================
-%   Load data
-
-load('.\Data\Inputdata_All.mat', ...
-     'notillall_int', ...
-     'tileall_frac3', ...
-     'ccall_frac3');
-USgeo = readgeotable(".\Shapefile\USA_84.shp");
 % Define practices, plotting configurations, and scaling
 practices = {
     'No-Till',          notillall_int,  [0 80],  "Reds",   "-RdBu",  'nt';
