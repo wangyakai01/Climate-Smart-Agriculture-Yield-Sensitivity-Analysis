@@ -1,4 +1,5 @@
-# Climate-Smart-Agriculture-Yield-Sensitivity-Analysis
+# Climate–Smart Agriculture Yield Sensitivity Analysis
+
 ### Overview  
 This repository contains MATLAB R2023b scripts and datasets for analyzing how **climate, soil, and management practices** (no-till, cover cropping, drainage, irrigation) affect crop yield and drought sensitivity across U.S. agricultural regions (1980s – 2010s).  
 
@@ -98,4 +99,6 @@ All figures are automatically saved to the `Fig/` directory, including:
 - Decadal yield sensitivity (SPEI) maps  
 - Conservation practice adoption trends  
 - ADSI spatial distribution and regional bar charts  
+
+
 
