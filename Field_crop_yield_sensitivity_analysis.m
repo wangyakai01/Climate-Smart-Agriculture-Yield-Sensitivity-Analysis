@@ -239,4 +239,4 @@ for i = 1:4
 end
 
 % Save figure
- % exportgraphics(gcf, '.\Fig\Fig_site_Result_dry_wetyears_update.jpg', 'Resolution', 300)
+ exportgraphics(gcf, '.\Fig\Fig_site_Result_dry_wetyears_update.jpg', 'Resolution', 300)

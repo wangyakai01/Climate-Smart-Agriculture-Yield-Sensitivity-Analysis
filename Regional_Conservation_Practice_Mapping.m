@@ -11,7 +11,7 @@
 %         22:31  → 2000s
 %         32:41  → 2010s
 % ============================================================
-clear; clc;
+% clear; clc;
 
 %% ===============================================================
 % Define practices, plotting configurations, and scaling
@@ -68,7 +68,7 @@ for k = 1:size(practices,1)
         title(sprintf('%s — %s', practice_name, dec_name), 'FontSize', 14, 'FontWeight', 'bold');
 
         % ---- Optional export ----
-        %exportgraphics(gcf, sprintf('.\\Fig\\Fig_%s_%s.jpg', short_name, dec_name), 'Resolution', 300);
+        exportgraphics(gcf, sprintf('./Fig/Fig_%s_%s.jpg', short_name, dec_name), 'Resolution', 300);
     end
 
     %% ========== Change Map (2010s − 1980s) ==========
@@ -91,6 +91,6 @@ for k = 1:size(practices,1)
     box off; clim([-clim_base(2), clim_base(2)]);
     title(sprintf('%s — Change (2010s − 1980s)', practice_name), 'FontSize', 14, 'FontWeight', 'bold');
 
-    %exportgraphics(gcf, sprintf('.\\Fig\\Fig_%s_change.jpg', short_name), 'Resolution', 300);
+    exportgraphics(gcf, sprintf('./Fig/Fig_%s_change.jpg', short_name), 'Resolution', 300);
 end
 

@@ -92,7 +92,7 @@ h = colorbar;
 h.Position = [0.8 0.15 0.0212 0.4];
 box off
 clim([-0.15, 0.3])
-%exportgraphics(gcf, '.\Fig\Fig_FEU_1980s.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_FEU_1980s.jpg', 'Resolution', 300)
 
 %% ========================== Figure: FEU 2010s ==========================
 figure
@@ -110,7 +110,7 @@ h = colorbar;
 h.Position = [0.8 0.15 0.0212 0.4];
 box off
 clim([-0.15, 0.3])
-%exportgraphics(gcf, '.\Fig\Fig_FEU_2010s.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_FEU_2010s.jpg', 'Resolution', 300)
 
 %% ========================== Figure: FEU Change ==========================
 figure
@@ -128,7 +128,7 @@ h = colorbar;
 h.Position = [0.8 0.15 0.0212 0.4];
 box off
 clim([-0.3, 0.3])
-%exportgraphics(gcf, '.\Fig\Fig_FEU_s.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_FEU_s.jpg', 'Resolution', 300)
 
 %% ========================== Regional Statistics ==========================
 color_value = crop_yield_corr(8).k7(:,8) - crop_yield_corr(8).k4(:,8);
@@ -164,5 +164,5 @@ xticks(1:7);
 xticklabels(data_t.regionShort);
 ylabel('Change in yield sensitivity to SPEI')
 set(gca, 'FontSize', 12, 'FontWeight', 'bold')
-%exportgraphics(gcf, '.\Fig\Fig_FEU_change.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_FEU_change.jpg', 'Resolution', 300)
 

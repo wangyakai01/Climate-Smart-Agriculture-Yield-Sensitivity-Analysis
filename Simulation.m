@@ -164,7 +164,7 @@ for v = 1:3
     xlabel('Year'); ylabel(ylabs{v});
     title([titles{v},' Trend'],'FontSize',18);
     legend('± SD','Mean','Location','northwest','Box','off'); box on;
-    % exportgraphics(gcf, sprintf('.\\Fig\\Fig_trend_%s.jpg',titles{v}), 'Resolution', 300)
+    exportgraphics(gcf, sprintf('./Fig/Fig_trend_%s.jpg',titles{v}), 'Resolution', 300)
    
     % --- Variable contribution subplot (stacked bar + pie)
     years = {'1980s','1990s','2000s','2010s'};
@@ -173,7 +173,7 @@ for v = 1:3
     barColors = [brewermap(3,'Oranges');brewermap(5,'Greens');brewermap(5,'Blues')];
     pieColors = [mean(brewermap(3,'Oranges'));mean(brewermap(5,'Greens'));mean(brewermap(5,'Blues'))];
     plotStackedBarWithTruePies(years, stackData, pieData, barColors, pieColors);
-    % exportgraphics(gcf, sprintf('.\\Fig\\Fig_Contribution_%s.jpg',titles{v}), 'Resolution', 300)
+    exportgraphics(gcf, sprintf('./Fig/Fig_Contribution_%s.jpg',titles{v}), 'Resolution', 300)
 
 
 end
@@ -264,7 +264,7 @@ for d = 1:4
     axInset.YAxis.FontSize = 8;
     xticks(1:numel(regionShort)); xticklabels(regionShort);
     set(gcf,'Position',[343 168 1059 697]);
-    % exportgraphics(gcf, sprintf('.\\Fig\\Fig_FEU_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
+    exportgraphics(gcf, sprintf('./Fig/Fig_FEU_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
 
 end
 
@@ -321,7 +321,7 @@ for d = 1:4
     axInset.XAxis.FontSize = 8; axInset.YAxis.FontSize = 8;
     xticks(1:numel(regionShort)); xticklabels(regionShort);
     set(gcf,'Position',[343 168 1059 697]);
-     % exportgraphics(gcf, sprintf('.\\Fig\\Fig_Energy_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
+     exportgraphics(gcf, sprintf('./Fig/Fig_Energy_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
 
 end
 
@@ -378,7 +378,7 @@ for d = 1:4
     axInset.XAxis.FontSize = 8; axInset.YAxis.FontSize = 8;
     xticks(1:numel(regionShort)); xticklabels(regionShort);
     set(gcf,'Position',[343 168 1059 697]);
-     % exportgraphics(gcf, sprintf('.\\Fig\\Fig_Protein_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
+     exportgraphics(gcf, sprintf('./Fig/Fig_Protein_MAP_%s.jpg',decades_names{d}), 'Resolution', 300)
 
 end
 
@@ -450,7 +450,7 @@ legend({'1980s','1990s','2000s','2010s'}, ...
 
 sgtitle('Partial Dependence of FEU on Climate, Management, and Soil Factors', ...
         'FontSize', 16, 'FontWeight', 'bold');
-% exportgraphics(gcf, '.\Fig\Fig_FEU_PDP.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_FEU_PDP.jpg', 'Resolution', 300)
 
 % ---------------------------------------------------------------
 %   (2) ENERGY PDP Plot
@@ -484,7 +484,7 @@ legend({'1980s','1990s','2000s','2010s'}, ...
 
 sgtitle('Partial Dependence of Energy Yield on Climate, Management, and Soil Factors', ...
         'FontSize', 16, 'FontWeight', 'bold');
-% exportgraphics(gcf, '.\Fig\Fig_Energy_PDP.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_Energy_PDP.jpg', 'Resolution', 300)
 % ---------------------------------------------------------------
 %   (3) PROTEIN PDP Plot
 % ---------------------------------------------------------------
@@ -517,7 +517,11 @@ legend({'1980s','1990s','2000s','2010s'}, ...
 sgtitle('Partial Dependence of Protein Yield on Climate, Management, and Soil Factors', ...
         'FontSize', 16, 'FontWeight', 'bold');
 
-% exportgraphics(gcf, '.\Fig\Fig_Protein_PDP.jpg', 'Resolution', 300)
+exportgraphics(gcf, '.\Fig\Fig_Protein_PDP.jpg', 'Resolution', 300)
 
+run("Regional_Conservation_Practice_Mapping.m")
+run("Decadal_changes_in_yield_sensitivity.m")
+run("Field_crop_yield_sensitivity_analysis.m")
+run("CSA_ADSI_proc.m")
 
 

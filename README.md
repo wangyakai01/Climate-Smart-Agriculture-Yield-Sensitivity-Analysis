@@ -16,7 +16,6 @@ The workflow integrates multi-decadal yield, management, climate, and soil datas
 ├── Decadal_changes_in_yield_sensitivity.m # Decadal drought sensitivity mapping
 ├── Field_crop_yield_sensitivity_analysis.m# Site-level dry vs. wet year analysis
 ├── Regional_Conservation_Practice_Mapping.m # Maps of no-till, drainage, cover crops
-├── Analysis_of_Food_Production_Components.m # FEU/Energy/Protein yield analysis
 │
 ├── RF_Model.m                            # Random Forest model training function
 ├── loadAllVars.m                         # Helper for loading all required variables
@@ -26,7 +25,7 @@ The workflow integrates multi-decadal yield, management, climate, and soil datas
 ├── brewmermap.m                          # ColorBrewer colormap function
 ├── extract_fixed_effect_Res.m            # Utility for extracting fixed-effect results
 ├── subplot.m                             # Extended subplot layout function
-├── main.m                                # Unified entry point running full workflow
+├── Simulation.m                                # Unified entry point running full workflow
 ├── README.md                             # This file
 ```
 
@@ -61,7 +60,7 @@ All analyses were tested on this configuration and completed efficiently without
 3. Ensure the required `.mat` data files are in the `Data/` directory.
 4. Run the startup script:
    ```matlab
-   main
+   Simulation
    ```
 
 
@@ -82,9 +81,8 @@ main
 ```
 This runs the sequential workflow:
 1. `Regional_Conservation_Practice_Mapping.m`
-2. `Analysis_of_Food_Production_Components.m`
-3. `Decadal_changes_in_yield_sensitivity.m`
-4. `CSA_ADSI_proc.m`
+2. `Decadal_changes_in_yield_sensitivity.m`
+3. `CSA_ADSI_proc.m`
 
 ### **2. Run site-level drought analysis**
 ```matlab
